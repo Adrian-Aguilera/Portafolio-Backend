@@ -6,7 +6,6 @@ from rest_framework.permissions import IsAuthenticated
 
 
 class PortafolioMethods(APIView):
-
     @api_view(['GET'])
     @permission_classes([IsAuthenticated])
     def Portafolio_projects(request):
