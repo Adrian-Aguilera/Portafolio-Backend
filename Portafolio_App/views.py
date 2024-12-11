@@ -8,5 +8,5 @@ from rest_framework.permissions import IsAuthenticated
 class PortafolioMethods(APIView):
     @api_view(['GET'])
     @permission_classes([IsAuthenticated])
-    def Portafolio_projects(request):
+    def get_projects(request):
         return Response({'message': 'Portafolio_projects'})
