@@ -1,0 +1,14 @@
+python-dotenv
+requests
+aiohttp
+django
+djangorestframework
+django-filter
+djangorestframework-simplejwt
+djangorestframework
+simplejwt
+django-cors-headers
+django-sslserver
+drf-yasg
+django-admin-interface
+django-colorfield
