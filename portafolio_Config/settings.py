@@ -43,6 +43,8 @@ INSTALLED_APPS = [
     'rest_framework',
     'sslserver',
     'drf_yasg',
+    #apps
+    'Portafolio_App',
 ]
 
 MIDDLEWARE = [
