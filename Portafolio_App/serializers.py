@@ -16,5 +16,5 @@ class PortafolioProjectsSerializer(serializers.ModelSerializer):
     Estado = statusProjectSerializer(many=True)
     class Meta:
         model = PortafolioProjects
-        fields = ['name', 'description', 'github', 'vsCode', 'imagen', 'technologies', 'Estado']
+        fields = ['name', 'description', 'github', 'vsCode', 'imagen', 'technologies', 'Estado', 'date']
 
