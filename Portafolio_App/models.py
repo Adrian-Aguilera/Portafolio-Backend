@@ -27,3 +27,15 @@ class PortafolioProjects(models.Model):
 
     def __str__(self):
         return self.name
+
+
+class PortafolioWorks(models.Model):
+    cargo = models.CharField(max_length=255, help_text='Cargo del trabajo')
+    empresa = models.CharField(max_length=255, help_text='Empresa del trabajo')
+    descripcion = models.CharField(max_length=255, help_text='Descripcion del trabajo')
+    inicio = models.CharField(max_length=255, help_text='Fecha de inicio del trabajo')
+    fin = models.CharField(max_length=255, help_text='Fecha de fin del trabajo')
+    tareas = models.JSONField(help_text='Tareas del trabajo', default=list)
+
+    def __str__(self):
+        return f'{self.cargo} -- {self.empresa}'

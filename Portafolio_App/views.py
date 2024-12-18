@@ -12,3 +12,9 @@ class PortafolioMethods(APIView):
     def get_projects(request):
         projects = Methods.get_projects()
         return Response({'data': projects})
+
+    @api_view(['GET'])
+    #@permission_classes([IsAuthenticated])
+    def get_works(request):
+        works = Methods.get_works()
+        return Response({'data': works})

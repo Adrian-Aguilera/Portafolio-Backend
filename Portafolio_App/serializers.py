@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import PortafolioProjects, tecnologies, statusProject
+from .models import PortafolioProjects, tecnologies, statusProject, PortafolioWorks
 
 class tecnologiesSerializer(serializers.ModelSerializer):
     class Meta:
@@ -18,3 +18,8 @@ class PortafolioProjectsSerializer(serializers.ModelSerializer):
         model = PortafolioProjects
         fields = ['name', 'description', 'github', 'vsCode', 'imagen', 'technologies', 'Estado', 'date']
 
+
+class PortafolioWorksSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = PortafolioWorks
+        fields = ['cargo', 'empresa', 'descripcion', 'inicio', 'fin', 'tareas']
