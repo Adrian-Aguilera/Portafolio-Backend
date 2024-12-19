@@ -5,6 +5,7 @@ from django.conf import settings
 urlpatterns = [
     path('projects', PortafolioMethods.get_projects, name='projects'),
     path('works', PortafolioMethods.get_works, name='works'),
+    path('activate', PortafolioMethods.activate_backend, name='activate'),
 ]
 
 if settings.DEBUG:
